@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cc_rule</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sancreek&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif; /* Use your preferred font here */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000; /* Set background color */
+        }
+
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw; /* Set video width to 100% of viewport width */
+            height: 100vh; /* Set video height to 100% of viewport height */
+            object-fit: cover; /* Ensure the video covers the entire viewport */
+            z-index: -1; /* Make sure the video is behind other content */
+        }
+
+        #content {
+            width: 80%; /* Set width of content */
+            padding: 20px; /* Adjust padding as needed */
+            color: white; /* Text color */
+            text-align: center; /* Center align content */
+        }
+
+        #logo {
+            position: absolute;
+            top: 20px; /* Adjust top position */
+            left: 20px; /* Adjust left position */
+            width: 300px; /* Adjust width of logo using rem units */
+            height: 100px; /* Maintain aspect ratio */
+        }
+
+        /* Style the text and paragraphs as needed */
+        .heading {
+            font-size: 42px;
+            font-weight: bold;
+            font-family: "Sancreek", serif;
+            font-weight: 400;
+            font-style: normal;
+            background: linear-gradient(90deg, rgba(0,85,200,0.8688725490196079) 0%, rgba(69,153,252,1) 50%, rgba(0,91,200,0.633578431372549) 100%);
+            -webkit-background-clip: text; /* Clip the gradient to the text */
+            -webkit-text-fill-color: transparent; /* Set text color to transparent to reveal the gradient */
+        }
+
+        
+        .txt2 {
+            color: white;
+        }
+
+        #subheading {
+            background: linear-gradient(90deg, rgba(0,85,200,0.8688725490196079) 0%, rgba(69,153,252,1) 50%, rgba(0,91,200,0.633578431372549) 100%);
+            font-size: 30px;
+            font-family: "Sancreek", serif;
+            font-weight: 400;
+            font-style: normal;
+            margin-top: 30px; /* Adjust space between heading and subheading */
+           
+            -webkit-background-clip: text; /* Clip the gradient to the text */
+            -webkit-text-fill-color: transparent;
+        }
+
+        #rules {
+            list-style-type: disc; /* Use disc as list item marker */
+            padding: 0;
+            font-size: 1.2rem;
+            margin-bottom:50px; /* Set font size */
+        }
+
+        #rules li {
+            text-align: left; /* Align list items to the left */
+            margin-bottom: 10px; /* Adjust spacing between list items */
+        }
+
+        button a.active {
+            background-color: rgb(78, 125, 235);
+            color: #0c0c0c;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 20px 50px;
+            text-decoration: none;
+        }
+
+        button{
+         
+    padding: 20px 40px;
+    border-radius: 32px;
+    background-color: rgb(78, 125, 235);;
+    color: black;
+    margin-top: -60px;
+
+}
+button>a{
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+button:hover{
+    box-shadow: 0 0 40px  rgb(78, 125, 235);;
+}
+        /* button a.active:hover {
+            cursor: pointer;
+            box-shadow: 0 0 40px rgb(5, 227, 209);
+        } */
+    </style>
+</head>
+<body>
+    <video id="video-background" src="./Dark Background Web (1).mp4" autoplay loop muted></video>
+    <img id="logo" src="./Screenshot_2024-04-03_140445-removebg-preview.png" alt="Your Logo">
+    <div id="content">
+        <h1 class="heading">COLOSSEUM <span class="txt2">14.0</span></h1>
+        <h2 id="subheading">RULE  -  BOOK</h2>
+        <h2 id="sub">ROUND  -  1  </h2>
+        <ul id="rules">
+            <li>Participants will tackle a series of coding challenges within a specified time frame of 3 hours.</li>
+            <li>The contest is open to all coding enthusiasts.</li>
+            <li>The contest will feature a range of coding problems varying in difficulty.</li>
+            <li>Submissions must be made within the contest duration. Participants are allowed limited submissions per problem, with only the final submission considered for evaluation.</li>
+            <li>Solutions will be evaluated based on correctness and efficiency. Participants must maintain integrity throughout the contest, with no cheating or plagiarism allowed. Sharing of solutions during the contest period is strictly prohibited.</li>
+            <li>In case of disputes or concerns, participants can bring them to the attention of the organizing committee. The committee's decision will be final and binding.</li>
+            <li>Prizes will be awarded to the top performers of Final Round. The 1st place winner will receive a prize worth 2000, while the 2nd place winner will receive a prize worth 1000.</li>
+            <li>The organizing committee reserves the right to modify contest rules as necessary. Participants are advised to regularly check for updates and announcements.</li>
+        </ul>
+        <div>
+            <button>
+                <a href="#" class="active">Let's get Start</a>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
